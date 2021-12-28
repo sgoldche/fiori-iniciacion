@@ -1,0 +1,30 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "orders-runui5",
+      "cwd": "${workspaceFolder}",
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npx",
+      "args": [
+        "--open",
+        "test/flpSandbox.html#Logalicourseorders-display"
+      ],
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "env": {
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/orders\"}",
+        "FIORI_TOOLS_UI5_VERSION": "",
+        "FIORI_TOOLS_UI5_URI": "https://ui5.sap.com"
+      }
+    }
+  ]
+}
