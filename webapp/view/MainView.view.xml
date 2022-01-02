@@ -8,7 +8,13 @@
         <App id="app">
             <pages>
                 <Page id="page" title="{i18n>title}">
-                    <content />
+                    <content>
+                        <Panel headerText="{i18n>selectionScreen}">
+                            <Label id="labelShipName" labelFor="shipName" text="{i18n>labelShipName}" class="sapUISmallMargen"/>
+                            <Input id="shipName" width="200px" class="sapUISmallMarginEnd"/>
+                            <Label id="labelCountry" text="{i18n>labelCountry}" class="sapUISmallMargin"/>
+                        </Panel>
+                    </content> 
                 </Page>
             </pages>
         </App>
