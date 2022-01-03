@@ -13,7 +13,7 @@
       "runtimeExecutable": "npx",
       "args": [
         "--open",
-        "test/flpSandbox.html#Logalicourseorders-display"
+        "index.html#Logalicourseorders-display"
       ],
       "windows": {
         "runtimeExecutable": "npx.cmd"

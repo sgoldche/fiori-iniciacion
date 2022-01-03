@@ -9,11 +9,22 @@ sap.ui.define([
         "use strict";
 
         return Controller.extend("Logalicourse.orders.controller.MainView", {
+
             onInit: function () {
                 const oJSONModel = new JSONModel();
                 const oView = this.getView();
                 oJSONModel.loadData("./model/SelectionScreenMenu.json");
                 oView.setModel(oJSONModel, "selectionScreen");
+            },
+
+            onFilter: function (oEvent) {
+
+            },
+
+            onClearFilter: function () {
+                const oModelSelScr = this.getView().getModel("selectionScreen");
+                oModelSelScr.setProperty("/ShipName", "");
+                oModelSelScr.setProperty("/CountryKey", "");
             }
         });
     });
